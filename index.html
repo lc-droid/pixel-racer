@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Racer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+    <style>
+      @keyframes drive {
+        0% { transform: translateX(-150px) translateY(-50%); }
+        100% { transform: translateX(calc(100vw + 150px)) translateY(-50%); }
+      }
+      .animate-drive {
+        animation: drive 3s linear infinite;
+      }
+      @keyframes fill-bar {
+        0% { width: 0%; }
+        100% { width: 100%; }
+      }
+      .animate-fill-bar {
+        animation: fill-bar 2.5s ease-in-out infinite;
+      }
+    </style>
+</head>
+  <body class="bg-gray-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

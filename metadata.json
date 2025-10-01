@@ -1,0 +1,5 @@
+{
+  "name": "Pixel Racer",
+  "description": "A 2D multiplayer racing game where two players compete on the same keyboard to dodge obstacles, collect coins, and achieve the highest score. Player 1 uses WASD keys and Player 2 uses Arrow keys.",
+  "requestFramePermissions": []
+}
